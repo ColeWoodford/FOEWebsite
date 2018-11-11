@@ -6,7 +6,8 @@ class Directions extends Component {
       <div>
         <h2>Directions</h2>
         <div>
-          Content for directions goes here.
+          <img src="/images/dir.png"></img>
+          <img src="/images/map.png"></img>
         </div>
       </div>
     );
