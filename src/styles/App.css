@@ -1,3 +1,15 @@
+body {
+  background-image: url("./background.png");
+  background-color: #cccccc;
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+  background-position: center; 
+}
+
+div {
+  padding: 10px;
+}
+
 .App {
   text-align: center;
 }
