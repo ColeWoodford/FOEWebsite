@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
+import { Carousel } from 'react-bootstrap';
 
 class Landing extends Component {
   render() {
     return (
       <div>
         <h2>Welcome to the official website of FOE 2485! </h2>
+        <Carousel>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="/images/dance.png" style={{margin:"0 auto"}} />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="/images/darts.png" style={{margin:"0 auto"}} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="/images/parade.png" style={{margin:"0 auto"}} />
+          </Carousel.Item>
+        </Carousel>
         <h2>We are located at 115 N. Fruitland in Kennewick, WA </h2>
         <h3>HOURS</h3>
         <div>
