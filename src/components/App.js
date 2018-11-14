@@ -5,7 +5,8 @@ import News from './News';
 import Calendar from './Calendar';
 import Directions from './Directions';
 import Contact from './Contact';
-import '../App.css';
+import Membership from './membership';
+import '../styles/App.css';
 
 import Header from './Header';
 
@@ -17,6 +18,7 @@ class App extends Component {
           <div>
             <Header />
             <Route exact path="/" component={Landing} />
+            <Route exact path="/membership" component={Membership} />
             <Route exact path="/news" component={News} />
             <Route path="/calendar" component={Calendar} />
             <Route path="/directions" component={Directions} />

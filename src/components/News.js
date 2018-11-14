@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { news_data } from '../data/news_data';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron, Button, Panel } from 'react-bootstrap';
 
 class News extends Component {
   renderList() {
@@ -24,23 +24,25 @@ class News extends Component {
   render() {
     return (
       <div>
-        <h2>News</h2>
-        <Jumbotron>
-          <h1>Trunk or Treat!</h1>
-          <p>
-            Wednesday, October 31st
-          </p>
-          <p>
-            Fun, family friendly Halloween event held in our parking lot. Bring your kids in their Halloween 
-            costumes and trick or treat at cars that are also "dressed up" for Halloween.
-          </p>
-          <p>
-            <Button bsStyle="primary">Learn more</Button>
-          </p>
-        </Jumbotron>
-        <div>
-          {this.renderList()}
-        </div>
+        <Panel>
+          <h2>News</h2>
+          <Jumbotron>
+            <h1>Trunk or Treat!</h1>
+            <p>
+              Wednesday, October 31st
+            </p>
+            <p>
+              Fun, family friendly Halloween event held in our parking lot. Bring your kids in their Halloween 
+              costumes and trick or treat at cars that are also "dressed up" for Halloween.
+            </p>
+            <p>
+              <Button bsStyle="primary">Learn more</Button>
+            </p>
+          </Jumbotron>
+          <div>
+            {this.renderList()}
+          </div>
+        </Panel>
       </div>
     );
   }
