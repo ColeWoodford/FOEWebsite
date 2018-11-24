@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, PageHeader, Panel } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, PageHeader, Panel, } from 'react-bootstrap';
 
 class Header extends Component {
   render() {
@@ -7,12 +7,13 @@ class Header extends Component {
       <div>
         <PageHeader>
           <Panel>
-            <a href="/">
-              <img src="images/FOE_logo.png" alt="2485Logo" style={{width:'150px',height:'120px', position:"relative"}}/>
-            </a>
-
-            <Nav bsStyle="pills">
-              <NavItem class="nav justify-content-end" eventKey={1} href="/">
+            <Nav bsStyle="pills small default">
+              <NavItem eventKey={1} href="/">
+                <a href="/">
+                  <img src="images/FOE_logo.png" alt="2485Logo" style={{width:'150px',height:'120px', position:"relative"}}/>
+                </a>
+              </NavItem>
+              <NavItem eventKey={1} href="/">
                 Home
               </NavItem>
               <NavItem eventKey={1} href="/membership">
@@ -32,14 +33,14 @@ class Header extends Component {
               </NavItem>
             </Nav>
             
-          </Panel>
-        </PageHeader>
+        </Panel>
+      </PageHeader>
 
-        <Navbar>
+        <Navbar >
             <Nav>
-              <NavItem>
+              <NavItem eventKey={1} href="/">
                 <a href="/">
-                  <img src="images/2485_Logo-150x120.jpg" alt="2485Logo" style={{width:'150px',height:'120px', position:"relative"}}/>
+                  <img src="images/FOE_logo.png" alt="2485Logo" style={{width:'150px',height:'120px', position:"relative"}}/>
                 </a>
               </NavItem>
               <NavItem eventKey={1} href="/">
