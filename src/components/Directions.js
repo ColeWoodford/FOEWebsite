@@ -8,8 +8,8 @@ class Directions extends Component {
         <Panel>
           <h2>Directions</h2>
           <div>
-            <img src="/images/dir.png"></img>
-            <img src="/images/map.png"></img>
+            <img alt="directions" src="/images/dir.png"></img>
+            <img alt="map" src="/images/map.png"></img>
           </div>
         </Panel>
       </div>

@@ -6,6 +6,21 @@ body {
   background-position: center; 
 }
 
+.news-item-content {
+  border-style: solid;
+  border-color: lightgray;
+}
+
+.news-item-date {
+  font-style: italic;
+}
+
+.news-item-title {
+  margin-top: -20px;
+  font-size: large;
+  font-weight: bold;
+}
+
 div {
   padding: 10px;
 }

@@ -16,6 +16,7 @@ class News extends Component {
           <div className="news-item-content">
             {item.content}
           </div><br/>
+          <hr></hr>
           </div>
         );
     });
