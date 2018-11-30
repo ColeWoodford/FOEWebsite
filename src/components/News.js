@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { news_data } from '../data/news_data';
-import { Jumbotron, Button, Panel } from 'react-bootstrap';
+import { Jumbotron, Button, Panel, Col } from 'react-bootstrap';
+import Newsletters from './Newsletters';
+import PageBanner from './PageBanner';
 
 class News extends Component {
   renderList() {
@@ -25,25 +27,32 @@ class News extends Component {
   render() {
     return (
       <div>
-        <Panel>
-          <h2>News</h2>
-          <Jumbotron>
-            <h1>Trunk or Treat!</h1>
-            <p>
-              Wednesday, October 31st
-            </p>
-            <p>
-              Fun, family friendly Halloween event held in our parking lot. Bring your kids in their Halloween 
-              costumes and trick or treat at cars that are also "dressed up" for Halloween.
-            </p>
-            <p>
-              <Button bsStyle="primary">Learn more</Button>
-            </p>
-          </Jumbotron>
-          <div>
-            {this.renderList()}
-          </div>
-        </Panel>
+        <PageBanner bannerTitle="News" />
+        <div style={{width:"80%", margin:"auto"}}>
+          <Col xs={12} md={10}>
+            <Jumbotron>
+              <h1>Trunk or Treat!</h1>
+              <p>
+                Wednesday, October 31st
+              </p>
+              <p>
+                Fun, family friendly Halloween event held in our parking lot. Bring your kids in their Halloween 
+                costumes and trick or treat at cars that are also "dressed up" for Halloween.
+              </p>
+              <p>
+                <Button bsStyle="primary">Learn more</Button>
+              </p>
+            </Jumbotron>
+          </Col>
+          <Col xs={6} md={2}>
+            <Newsletters />
+          </Col>
+          <Col xs={12}>
+            <div>
+              {this.renderList()}
+            </div>
+          </Col>
+        </div>
       </div>
     );
   }
