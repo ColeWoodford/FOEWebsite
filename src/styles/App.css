@@ -6,6 +6,39 @@ body {
   background-position: center; 
 }
 
+.container {
+  width: 100% !important;
+  position: relative;
+}
+
+.panel {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  width: 90%;
+  margin:auto;
+}
+
+.banner {
+  width: 80%;
+  height: 70px;
+  margin: -40px auto 40px auto;
+  background-color: #0e2e60;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.banner-title {
+  color: white;
+  margin: 10px auto auto 30px;
+}
+
+.carousel {
+  width: 80%;
+  margin: -40px auto 40px auto;
+}
+
 .news-item-content {
   border-style: solid;
   border-color: lightgray;
@@ -19,6 +52,44 @@ body {
   margin-top: -20px;
   font-size: large;
   font-weight: bold;
+}
+
+.footer {
+  width: 80%;
+  margin: auto auto -240px auto;
+  background-color: #0e2e60;
+  box-shadow: 10px 5px 5px gray;
+  height: 260px;
+  color: white;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+input, label {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  /* positions the label text beside the input */
+  text-align: left;
+  vertical-align: top;
+}
+
+label + input {
+  width: 30%;
+  /* large margin-right to force the next element to the new-line
+     and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 -15%;
+}
+
+.comment-box {
+  width: 30%;
+  height: 200px;
+  margin: 0 30% 0 -15%;
+  font-size:14pt;
 }
 
 div {

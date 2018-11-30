@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Panel } from 'react-bootstrap';
+import PageBanner from './PageBanner';
 
 class Membership extends Component {
   render() {
     return (
       <div>
+        <PageBanner bannerTitle="Membership" />
         <Panel>
-          <h2>Membership</h2>
           <h3>
             How to become a member:
           </h3>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Carousel , Panel } from 'react-bootstrap';
+import PageBanner from './PageBanner';
 
 class Landing extends Component {
   render() {
     return (
       <div>
-        <Carousel style={{width:"900px", margin:"auto"}}>
+        {/* <Carousel className="carousel">
           <Carousel.Item>
             <img width={900} height={500} alt="900x500" src="/images/logo_slide.png" style={{margin:"0 auto"}} />
           </Carousel.Item>
@@ -19,9 +20,10 @@ class Landing extends Component {
           <Carousel.Item>
             <img width={900} height={500} alt="900x500" src="/images/parade.png" style={{margin:"0 auto"}} />
           </Carousel.Item>
-        </Carousel>
-        <Panel>
-          <h2>Welcome to the official website of FOE 2485! </h2>
+        </Carousel> */}
+        <PageBanner bannerTitle=" " />
+        <Panel className="home-panel">
+          <h2>Welcome to the official website of FOE 2485!</h2>
           <h2>We are located at 115 N. Fruitland in Kennewick, WA </h2>
           <h3>HOURS</h3>
           <div>
@@ -36,12 +38,16 @@ class Landing extends Component {
               Mon/Tue/Wed   4:00 pm<br/>
               Thurs/Fri           5:00 pm<br/>
               Sat/Sun             1:00 pm<br/><br/>
+              <br></br>
               HAPPY HOUR 4PM – 6PM<br/>
             </p>
+            <br></br>
             <p>
               To learn more about or join the Fraternal Order of Eagles check out https://www.foe.com/ or stop by our aerie. We always 
               love to talk about what we do!
             </p>
+            <br></br>
+            <br></br>
           </div>
         </Panel>
       </div>

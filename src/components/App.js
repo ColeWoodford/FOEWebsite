@@ -5,7 +5,8 @@ import News from './News';
 import Calendar from './Calendar';
 import Directions from './Directions';
 import Contact from './Contact';
-import Membership from './membership';
+import Membership from './Membership';
+import Footer from './Footer';
 import '../styles/App.css';
 
 import Header from './Header';
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/calendar" component={Calendar} />
             <Route path="/directions" component={Directions} />
             <Route path="/contact" component={Contact} />
+            <Footer />
           </div>
         </BrowserRouter>
       </div>
