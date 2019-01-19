@@ -54,6 +54,12 @@ export const news_data = [
     content: `If you would like to be notified of special events that pop up during the month like us on our 
     facebook page. Just search for Eagles 2485!`,
   },
+  {
+    id: 8,
+    date: "1/18/2019",
+    title: "This is a test",
+    content: `Content`,
+  },
 ]
 
 export default {
